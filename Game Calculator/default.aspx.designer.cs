@@ -58,6 +58,15 @@ namespace Game_Calculator {
         protected global::System.Web.UI.WebControls.Button btnSummary;
         
         /// <summary>
+        /// lblNumWon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNumWon;
+        
+        /// <summary>
         /// lblGamesWon control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,15 @@ namespace Game_Calculator {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblGamesWon;
+        
+        /// <summary>
+        /// lblNumLoss control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNumLoss;
         
         /// <summary>
         /// lblGamesLost control.
@@ -76,6 +94,15 @@ namespace Game_Calculator {
         protected global::System.Web.UI.WebControls.Label lblGamesLost;
         
         /// <summary>
+        /// lblPerWin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPerWin;
+        
+        /// <summary>
         /// lblWinPercent control.
         /// </summary>
         /// <remarks>
@@ -83,6 +110,15 @@ namespace Game_Calculator {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblWinPercent;
+        
+        /// <summary>
+        /// lblTtlScore control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTtlScore;
         
         /// <summary>
         /// lblTotalScored control.
@@ -94,6 +130,15 @@ namespace Game_Calculator {
         protected global::System.Web.UI.WebControls.Label lblTotalScored;
         
         /// <summary>
+        /// lblTtlAllow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTtlAllow;
+        
+        /// <summary>
         /// lblTotalAllowed control.
         /// </summary>
         /// <remarks>
@@ -101,6 +146,15 @@ namespace Game_Calculator {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTotalAllowed;
+        
+        /// <summary>
+        /// lblPtDiff control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPtDiff;
         
         /// <summary>
         /// lblPointRatio control.
@@ -112,6 +166,15 @@ namespace Game_Calculator {
         protected global::System.Web.UI.WebControls.Label lblPointRatio;
         
         /// <summary>
+        /// lblTtlSpec control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTtlSpec;
+        
+        /// <summary>
         /// lblTotalSpectators control.
         /// </summary>
         /// <remarks>
@@ -119,6 +182,15 @@ namespace Game_Calculator {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTotalSpectators;
+        
+        /// <summary>
+        /// lblAvgSpec control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAvgSpec;
         
         /// <summary>
         /// lblAvgSpectators control.

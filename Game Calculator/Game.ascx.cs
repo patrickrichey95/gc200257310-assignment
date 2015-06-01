@@ -13,5 +13,37 @@ namespace Game_Calculator
         {
 
         }
+
+        public int getWin
+        {
+            get
+            {
+                return rblResult.SelectedIndex;
+            }
+        }
+
+        public int getScored
+        {
+            get
+            {
+                return Int32.Parse(txtScored.Text);
+            }
+        }
+
+        public int getAllowed
+        {
+            get
+            {
+                return Int32.Parse(txtAllowed.Text);
+            }
+        }
+
+        public int getSpectators
+        {
+            get
+            {
+                return Int32.Parse(txtSpectators.Text);
+            }
+        }
     }
 }

@@ -2,27 +2,42 @@
 
 <div>
     <div>
-        <asp:Label ID="lblResult1" runat="server">Result:</asp:Label>
-        <asp:RadioButtonList ID="rblResult1" runat="server" Required="true">
+        <asp:Label ID="lblResult" runat="server">Result: </asp:Label>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="rblResult" 
+            runat="server" ErrorMessage="Required" Display="Dynamic"></asp:RequiredFieldValidator>
+        <asp:RadioButtonList ID="rblResult" runat="server">
             <asp:ListItem Value="1" Text="Win"></asp:ListItem>
             <asp:ListItem Value="2" Text="Lose"></asp:ListItem>
         </asp:RadioButtonList>
     </div>
     <div>
-        <asp:Label ID="lblScored1" runat="server">Points Scored: </asp:Label>
-        <asp:TextBox ID="txtScored1" runat="server" Required="true"></asp:TextBox>
-        <asp:RangeValidator ID="RangeValidator1" ControlToValidate="txtScored1" runat="server" ErrorMessage="Cannot be Negative"></asp:RangeValidator>
+        <asp:Label ID="lblScored" runat="server">Points Scored: </asp:Label>
+        <asp:TextBox ID="txtScored" runat="server"></asp:TextBox>
+        <asp:CompareValidator ID="CompareValidator2" ControlToValidate="txtScored" ValueToCompare="-1" 
+            Type="Integer" Operator="GreaterThan" runat="server" ErrorMessage="Score cannot be negative" Display="Dynamic"></asp:CompareValidator>
+        <asp:CompareValidator ID="CompareValidator4" ControlToValidate="txtScored"
+            Type="Integer" Operator="DataTypeCheck" runat="server" ErrorMessage="Must be numeric value" Display="Dynamic"></asp:CompareValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txtScored" 
+            runat="server" ErrorMessage="Required" Display="Dynamic"></asp:RequiredFieldValidator>
     </div>
     <div>
-        <asp:Label ID="lblAllowed1" runat="server">Points Allowed: </asp:Label>
-        <asp:TextBox ID="txtAllowed1" runat="server" Required="true"></asp:TextBox>
-        <asp:RangeValidator ID="RangeValidator2" ControlToValidate="txtAllowed1" runat="server" ErrorMessage="Cannot be Negative"></asp:RangeValidator>
-        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Game cannot end in Tie"
-            ControlToValidate="txtScored1" ValueToCompare="value" ControlToCompare="txtAllowed1"></asp:CompareValidator>
+        <asp:Label ID="lblAllowed" runat="server">Points Allowed: </asp:Label>
+        <asp:TextBox ID="txtAllowed" runat="server"></asp:TextBox>
+        <asp:CompareValidator ID="CompareValidator3" ControlToValidate="txtAllowed" ValueToCompare="-1" 
+            Type="Integer" Operator="GreaterThan" runat="server" ErrorMessage="Score cannot be negative" Display="Dynamic"></asp:CompareValidator>
+        <asp:CompareValidator ID="CompareValidator5" runat="server" ErrorMessage="Must be numeric value" Type="Integer"
+            ControlToValidate="txtAllowed" Operator="DataTypeCheck" Display="Dynamic"></asp:CompareValidator>
+        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Game cannot end in a tie" Type="Integer"
+            ControlToValidate="txtScored" Operator="NotEqual" ControlToCompare="txtAllowed" Display="Dynamic"></asp:CompareValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txtAllowed" runat="server" ErrorMessage="Required" Display="Dynamic"></asp:RequiredFieldValidator>
     </div>
     <div>
-        <asp:Label ID="lblSpectators1" runat="server">Spectators (#): </asp:Label>
-        <asp:TextBox ID="txtSpectators1" runat="server" Required="true"></asp:TextBox>
-        <asp:RangeValidator ID="RangeValidator3" ControlToValidate="txtSpectators1" runat="server" ErrorMessage="Cannot be Negative"></asp:RangeValidator>
+        <asp:Label ID="lblSpectators" runat="server">Spectators (#): </asp:Label>
+        <asp:TextBox ID="txtSpectators" runat="server"></asp:TextBox>
+        <asp:CompareValidator ID="CompareValidator6" ControlToValidate="txtSpectators" ValueToCompare="-1" 
+            Type="Integer" Operator="GreaterThan" runat="server" ErrorMessage="Score cannot be negative" Display="Dynamic"></asp:CompareValidator>
+        <asp:CompareValidator ID="CompareValidator7" runat="server" ErrorMessage="Must be numeric value" Type="Integer"
+            ControlToValidate="txtSpectators" Operator="DataTypeCheck" Display="Dynamic"></asp:CompareValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="txtSpectators" runat="server" ErrorMessage="Required" Display="Dynamic"></asp:RequiredFieldValidator>
     </div>
 </div>
