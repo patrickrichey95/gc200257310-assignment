@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Game_Calculator.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- start navbar -->
+    <nav id="nav1" class="navbar navbar-inverse navbar-fixed-top"> 
+        <a href="default.aspx" class="navbar-brand">Assignment 1</a>
+    </nav> 
+    <!-- end navbar -->
+
+    <form method="post" id="form1" runat="server" class="form-horizontal">
+    
+    <div class="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <!-- start footer -->
+    <footer class="panel-footer">
+        <div class="text-center">
+            &copy;2015 Patrick Richey - Assignment 1
+        </div>
+    </footer>
+    <!-- end footer -->
+    </form>
+</body>
+</html>
