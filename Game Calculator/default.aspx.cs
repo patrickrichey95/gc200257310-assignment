@@ -16,10 +16,11 @@ namespace Game_Calculator
 
         protected void btnSummary_Click(object sender, EventArgs e)
         {
+            //declaring required variables, array to hold each user control
             Game[] games = new Game[4] {game1, game2, game3, game4};
             int wins = 0;
             int losses = 0;
-            int wlRatio = 0;
+            decimal wlRatio = 0;
             int totalScored = 0;
             int totalAllowed = 0;
             int ptRatio = 0;
@@ -27,26 +28,28 @@ namespace Game_Calculator
             int averageSpectators = 0;
 
             //check games won
-            for (int i=0; i <= 3; i++)
+            for (int i=0; i <= 3; i++)//cycle through array of user controls
             {
-                if(games[i].getWin == 0)
+                if(games[i].getWin == 0) //if win is selected
                 {
-                    wins++;
+                    wins++; //increment number of wins
                 }
-                else
+                else //if lose is selected
                 {
-                    losses++;
+                    losses++; //increment number of losses
                 }
 
-                totalScored += games[i].getScored;
-                totalAllowed += games[i].getAllowed;
-                totalSpectators += games[i].getSpectators;
+                totalScored += games[i].getScored; //get scored for each game
+                totalAllowed += games[i].getAllowed; //get allowed for each game
+                totalSpectators += games[i].getSpectators; //get spectators for each game
             }
 
-            wlRatio = wins / 4;
+            //calculate win percentage, point differential, and average spectators
+            wlRatio = (decimal)wins / 4;
             ptRatio = totalScored - totalAllowed;
             averageSpectators = totalSpectators / 4;
 
+            //print out the summary for each stat
             lblGamesWon.Text = wins.ToString();
             lblGamesLost.Text = losses.ToString();
             lblWinPercent.Text = wlRatio.ToString();
@@ -55,6 +58,9 @@ namespace Game_Calculator
             lblPointRatio.Text = ptRatio.ToString();
             lblTotalSpectators.Text = totalSpectators.ToString();
             lblAvgSpectators.Text = averageSpectators.ToString();
+
+            //set the panel to visible
+            pnlSummary.Visible = true;
         }
     }
 }

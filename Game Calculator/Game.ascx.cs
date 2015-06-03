@@ -14,7 +14,7 @@ namespace Game_Calculator
 
         }
 
-        public int getWin
+        public int getWin //get method to retrieve radio button result
         {
             get
             {
@@ -22,7 +22,7 @@ namespace Game_Calculator
             }
         }
 
-        public int getScored
+        public int getScored //get method to retrieve scored result
         {
             get
             {
@@ -30,7 +30,7 @@ namespace Game_Calculator
             }
         }
 
-        public int getAllowed
+        public int getAllowed //get method to retrieve allowed result
         {
             get
             {
@@ -38,7 +38,7 @@ namespace Game_Calculator
             }
         }
 
-        public int getSpectators
+        public int getSpectators //get method to retrieve number of spectators
         {
             get
             {
